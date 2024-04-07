@@ -38,4 +38,6 @@ int main(){
         cout << "El numero NO es perfecto " << endl;
     }
 
+    return 0;
+
 }

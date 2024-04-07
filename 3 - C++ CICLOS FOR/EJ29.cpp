@@ -82,5 +82,5 @@ int main(){
     cout << "Numero de partido mayor cant. goles: " << numParGol << ", cantidad: " << mayGol << endl;
     cout << "Mayor cantidad de partidos consecutivos realizando goles: " << racha << endl;
 
-
+    return 0;
 }

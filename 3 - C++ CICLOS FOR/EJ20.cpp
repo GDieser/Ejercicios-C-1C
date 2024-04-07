@@ -32,4 +32,6 @@ int main(){
         cout << "El numero NO es primo..." << endl;
     }
 
+    return 0;
+
 }

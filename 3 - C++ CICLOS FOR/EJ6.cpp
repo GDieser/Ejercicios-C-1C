@@ -27,4 +27,6 @@ int main(){
     }
 
     cout << "La cantidad de numeros positivos es: " << cont <<endl;
+
+    return 0;
 }

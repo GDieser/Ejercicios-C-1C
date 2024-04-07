@@ -7,36 +7,17 @@ int main() {
     y el valor que se le paga por hora trabajada y listar por pantalla el sueldo que le corresponda.*/
 
 
-   //int horas, valor, sueldo;
+   int horas, pago, total;
 
-   int a, b, c, may, men, med;
+   cout << "Ingrese cantidad de horas trabajadas: " << endl;
+   cin >> horas;
 
-   cin >> a;
-   cin >> b;
-   cin >> c;
+   cout << "Ingrese el valor por hora de trabajo: " << endl;
+   cin >> pago;
 
-   if(a > b) {
-       may = a;
-       men = b;
-   }
-   else{
-       may = b;
-       men = a;
-   }
-    if(c > may){
-       med = may;
-   }
-   else{
-    if(c < men){
-       med = men;
-   }
-   else{
-       med = c;
-   }
-   }
+   total = horas * pago;
 
-
-   cout << "Medio: " <<med;
+   cout << "Total a pagar: $" << total << endl;
 
    return 0;
 }

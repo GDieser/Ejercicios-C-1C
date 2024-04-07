@@ -30,4 +30,5 @@ int main(){
 
     cout << "El legajo con mayor sueldo es: " << lm << endl;
 
+    return 0;
 }

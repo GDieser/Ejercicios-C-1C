@@ -22,5 +22,5 @@ int main(){
         }
         cont = 0;
     }
-
+    return 0;
 }

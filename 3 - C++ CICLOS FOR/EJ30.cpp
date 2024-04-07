@@ -49,4 +49,6 @@ int main(){
     else{
         cout << "Desordenado..." << endl;
     }
+
+    return 0;
 }

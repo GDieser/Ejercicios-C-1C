@@ -42,4 +42,6 @@ int main(){
 
     cout << "El ultimo primo ingresado es: " << primo << " en la ubicacion: " << ubi2 << endl;
 
+    return 0;
+
 }

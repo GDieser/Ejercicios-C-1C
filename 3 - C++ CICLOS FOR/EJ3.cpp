@@ -12,4 +12,5 @@ int main(){
         cout << "Numero: " << x << endl;
     }
 
+    return 0;
 }

@@ -35,4 +35,6 @@ int main(){
 
     cout << "El maximo de los pares ingresados es: " << may << endl;
 
+    return 0;
+
 }

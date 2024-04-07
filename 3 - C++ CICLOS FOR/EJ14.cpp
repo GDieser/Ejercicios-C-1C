@@ -46,4 +46,6 @@ int main(){
 
     cout << "Primer impar: " << p <<", Segundo impar: "<< s << ", Anteultimo: " << a << " y Ultimo: " << u << endl;
 
+    return 0;
+
 }

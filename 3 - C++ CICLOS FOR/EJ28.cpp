@@ -71,4 +71,6 @@ int main(){
     cout << "Deposito maximo: " << dMay << ", realizado el dia: " << dM << ", numero de movimiento: " << nmMay << endl;
 
     cout << "Cantidad de movimientos del dia 10: " << contD10 << endl;
+
+    return 0;
 }

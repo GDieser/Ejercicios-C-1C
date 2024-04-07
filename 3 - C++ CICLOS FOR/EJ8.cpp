@@ -34,5 +34,5 @@ int main(){
 
     cout << "Positivos: " << pp <<"%, Negativos: " << pn << "%, Cero: " << pc << "%" << endl;
 
-
+    return 0;
 }

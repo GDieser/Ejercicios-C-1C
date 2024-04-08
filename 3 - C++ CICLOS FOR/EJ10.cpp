@@ -31,6 +31,4 @@ int main(){
 
     cout << "Numero maximo: " << may << ", Posicion: " << pos << endl;
 
-    return 0;
-
 }

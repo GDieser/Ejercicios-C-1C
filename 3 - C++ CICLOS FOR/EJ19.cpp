@@ -23,6 +23,4 @@ int main(){
 
     cout << "El numero de divisores posibles es: " << cont << endl;
 
-    return 0;
-
 }

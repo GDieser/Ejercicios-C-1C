@@ -49,8 +49,6 @@ int main(){
 
     cout << "Maximo Negativo: " << may << "| Minimo positivo: " << men << endl;
 
-    return 0;
-
 }
 
 

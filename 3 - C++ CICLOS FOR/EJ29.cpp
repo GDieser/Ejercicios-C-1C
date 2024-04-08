@@ -23,9 +23,9 @@ partidos consecutivos en los que haya convertido
 int main(){
 
     int x, numPar, minJu, tarAm, tarRoj, goles, contMJ1 = 0, contMJ2 = 0, tAT = 0;
-    int tRT = 0, promT, mayGol = 0, contG = 0, racha = 0, numParGol;
+    int tRT = 0, promT, mayGol = 0, contG = 0, racha = 0, numParGol, rachaFinal = 0;
 
-    for( x = 1; x <= 10; x++ ){
+    for( x = 1; x <= 19; x++ ){
 
         cout << "Numero de partido: " << endl;
         cin >> numPar;
@@ -68,19 +68,20 @@ int main(){
 
         if( contG > 0){
             racha = contG;
-            if( contG > 2){
-                racha = contG;
+            if( contG > 2 ){
+                if( racha > rachaFinal)
+                rachaFinal = racha;
             }
         }
     }
 
-    promT = (tAT + tRT)/10;
+    promT = (tAT + tRT)/19;
 
     cout << "Cantidad de partidos que no jugo: " << contMJ1 << endl;
     cout << "Cantidad de partidos que jugo el partido completo: " << contMJ2 << endl;
-    cout << "Cantidad promedio de tarjetas en 10 partidos: " << promT << endl;
+    cout << "Cantidad promedio de tarjetas por partido: " << promT << endl;
     cout << "Numero de partido mayor cant. goles: " << numParGol << ", cantidad: " << mayGol << endl;
-    cout << "Mayor cantidad de partidos consecutivos realizando goles: " << racha << endl;
+    cout << "Mayor cantidad de partidos consecutivos realizando goles: " << rachaFinal << endl;
 
-    return 0;
+
 }

@@ -40,5 +40,4 @@ int main(){
 
     cout << "Se ingresaron: "<< contDI << " duplas de numeros impares" << endl;
 
-    return 0;
 }

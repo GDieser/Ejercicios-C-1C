@@ -49,6 +49,4 @@ int main(){
         cout << "Los numeros NO estan alternados..." << endl;
     }
 
-    return 0;
-
 }

@@ -29,5 +29,4 @@ int main(){
 
     cout << "El mayor: " << may << endl;
 
-    return 0;
 }

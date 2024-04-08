@@ -43,6 +43,4 @@ int main(){
 
     cout << "El mayor es: " << may << ", y el segundo mayor es: " << med << endl;
 
-    return 0;
-
 }

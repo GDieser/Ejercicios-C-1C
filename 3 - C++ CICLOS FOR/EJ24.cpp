@@ -46,6 +46,4 @@ int main(){
     cout << "Sueldo menor: $" << men << endl;
     cout << "Suedlo Promedio: $" << p << endl;
 
-    return 0;
-
 }

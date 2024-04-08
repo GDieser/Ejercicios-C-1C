@@ -35,6 +35,4 @@ int main(){
 
     cout << "El maximo ingresado es: "<< may << ", el minimo ingresado: "<< men <<endl;
 
-    return 0;
-
 }

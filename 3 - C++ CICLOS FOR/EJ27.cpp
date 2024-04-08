@@ -27,7 +27,7 @@ int main(){
     int x, nd, diaM, contN = 0, contL1 = 0, contL2 = 0;
     float v, mlLluvia, tem,  temMax, temMin, aTem;
 
-    for( x = 0; x < 6; x++ ){
+    for( x = 0; x < 2; x++ ){
 
         cout << "Ingrese numero de dia a cargar: " << endl;
         cin >> nd;
@@ -85,9 +85,8 @@ int main(){
             cout << "Fue una quincena humeda" << endl;
         }
         else{
-            cout << "Fue una quincena humeda" << endl;
+            cout << "Fue una quincena seca" << endl;
         }
     }
 
-    return 0;
 }

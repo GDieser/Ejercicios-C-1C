@@ -9,7 +9,7 @@ int main(){
 
     int x, l, s, may, lm;
 
-    for( x = 0; x < 10; x++ ){
+    for( x = 0; x < 3; x++ ){
 
         cout << "Ingrese el legajo del empleado: " << endl;
         cin >> l;
@@ -30,5 +30,4 @@ int main(){
 
     cout << "El legajo con mayor sueldo es: " << lm << endl;
 
-    return 0;
 }

@@ -65,6 +65,4 @@ int main(){
 
     cout << "Cantidad de Ternas Positivos consecutuvos: " << terna1 << endl;
     cout << "Cantidad de Ternas Negativos consecutuvos ordenados: " << terna2 << endl;
-
-    return 0;
 }

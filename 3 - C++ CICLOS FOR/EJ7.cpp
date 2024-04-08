@@ -33,5 +33,4 @@ int main(){
     cout << "Cantidad de Negativos: " << contN << endl;
     cout << "Cantidad de Ceros: " << contC << endl;
 
-    return 0;
 }

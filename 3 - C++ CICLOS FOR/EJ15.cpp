@@ -35,6 +35,4 @@ int main(){
         cout << "Conjunto no ordenado..."<< endl;
     }
 
-    return 0;
-
 }

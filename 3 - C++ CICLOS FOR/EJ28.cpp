@@ -17,11 +17,11 @@ La cantidad de movimientos del día 10.
 
 int main(){
 
-    int x, dia, nM, pM, pD, dM, cantM = 0, contE = 0, contD = 0, nmMay = 0, contD10, p1, p2;
+    int x, dia, nM, pM, pD, dM, cantM = 0, contE = 0, contD = 0, nmMay = 0, contD10 = 0, p1, p2;
     float imp, sFinal, acuE = 0, acuD = 0, dMay = 0, total, saldoFinal;
     char tipo;
 
-    for( x = 1; x <= 14; x++ ){
+    for( x = 1; x <= 2; x++ ){
 
         cout << "Ingrese Numero de movimiento: " << endl;
         cin >> nM;
@@ -48,6 +48,7 @@ int main(){
                 dMay = imp;
                 dM = dia;
                 nmMay = nM;
+
             }
             break;
         }
@@ -62,15 +63,13 @@ int main(){
     p1 = (contE *100 )/total;
     p2 = (contD *100 )/total;
 
-    saldoFinal = contD - contE;
+    saldoFinal = acuD - acuE;
 
-    cout << "Saldo final: " << saldoFinal << endl;
+    cout << "Saldo final: $" << saldoFinal << endl;
 
     cout << "Porcentaje de Deposito: " << p2 << "%, porcenjae de Extracciones: " << p1 << "% " <<endl;
 
     cout << "Deposito maximo: " << dMay << ", realizado el dia: " << dM << ", numero de movimiento: " << nmMay << endl;
 
     cout << "Cantidad de movimientos del dia 10: " << contD10 << endl;
-
-    return 0;
 }

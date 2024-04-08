@@ -47,6 +47,4 @@ int main(){
 
     cout << "El maximo es: " << may1 << ", y el segundo maximo es: " << may2 << endl;
 
-    return 0;
-
 }

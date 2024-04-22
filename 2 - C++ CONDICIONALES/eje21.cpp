@@ -55,6 +55,7 @@ int main()
 
     if( cc1 > 10 ){
         cout << "Cantidad no permitida..." << endl;
+        cc1 = 0;
     }
     else{
         switch(tc1){
@@ -75,6 +76,7 @@ int main()
 
     if( cc2 > 10 ){
         cout << "Cantidad no permitida..." << endl;
+        cc2 = 0;
     }
     else{
         switch( tc2 ){
@@ -95,6 +97,7 @@ int main()
 
     if( cc3 > 10 ){
         cout << "Cantidad no permitida..." << endl;
+        cc3 = 0;
     }
     else{
         switch( tc3 ){
@@ -128,6 +131,7 @@ int main()
     if ( gris == 49){
         cout << "Las carteras Grises no cuentan con ventas..." << endl;
     }
+
 
     canTotal = cc1 + cc2 + cc3;
 

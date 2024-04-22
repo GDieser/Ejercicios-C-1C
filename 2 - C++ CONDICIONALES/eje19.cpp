@@ -62,7 +62,7 @@ int main()
     }
 
     if(u){
-        imp = imp + (imp * 1.2);
+        imp = imp * 2.2;
     }
 
     cout << "El valor a abonar es: $" << imp << endl;

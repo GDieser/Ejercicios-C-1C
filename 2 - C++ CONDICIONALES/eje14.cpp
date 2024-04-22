@@ -31,13 +31,13 @@ int main()
     cin >> an;
 
 
-    cout << "Ingrese dia de su fecha actual: " << endl;
+    cout << "Ingrese dia actual: " << endl;
     cin >> da;
 
-    cout << "Ingrese mes de su fecha actual: " << endl;
+    cout << "Ingrese mes actual: " << endl;
     cin >> ma;
 
-    cout << "Ingrese anio de su fecha actual: " << endl;
+    cout << "Ingrese anio actual: " << endl;
     cin >> aa;
 
 

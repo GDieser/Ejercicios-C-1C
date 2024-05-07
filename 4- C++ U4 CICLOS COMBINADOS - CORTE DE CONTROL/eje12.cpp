@@ -14,7 +14,62 @@ resultados grupo por grupo.
 
 int main()
 {
-    int num = 1;
+    int num, positivos = 0, negativos = 0, ceros = 0, contPrimo = 0, grupoPrimo, ultPrimo = 0, contImpar = 0;
+
+    for (int i = 0; i < 2; i++)
+    {
+        for (int x = 0; x < 5; x++)
+        {
+            cout << "Ingrese un numero: " << endl;
+            cin >> num;
+            
+            if (num > 0)
+            {
+                positivos++;
+            }
+            else if (num < 0)
+            {
+                negativos++;
+            }else
+            {
+                ceros++;
+            }
+            
+            for (int y = 1; y <= num; y++)
+            {
+                if (num%y == 0)
+                {
+                    contPrimo++;
+                }
+            }
+
+            if (contPrimo == 2)
+            {
+                ultPrimo = num;
+                grupoPrimo = x;
+            }
+                
+            if (num%2 != 0)
+            {
+                contImpar++;
+            }
+
+            contPrimo = 0;
+        }
+
+        cout << "Positivos: " << positivos << ", Negativos: " << negativos << ", Ceros: " << ceros << endl;
+        positivos = 0, negativos = 0, ceros = 0;
+
+        if (ultPrimo == 0)
+        {
+            cout << "No se ingresaron Primos" << endl;
+        }else
+        {
+            cout << "Ultimo primo: " << ultPrimo << ", ubicacion: " << grupoPrimo << endl;
+        }
+    }
+
+    cout << "Cantidad de impares: " << contImpar << endl;
 
     return 0;
 }

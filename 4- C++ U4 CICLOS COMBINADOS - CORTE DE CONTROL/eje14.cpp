@@ -13,7 +13,68 @@ Cuántos números primos había en total entre los grupos. Se informa 1 resultad
 
 int main()
 {
-    int num = 1;
+    int num, maxNegativo = 0, minPositivo = 0, contPares = 0, contTotales = 0, contador = 0, primos = 0, porc1, porc2;
 
+    cout << "Ingrese un numero: " << endl;
+    cin >> num;
+
+    while (num != 0)
+    {
+        while (num != 0)
+        {
+            contTotales++;
+
+            if (num > 0)
+            {
+                if (minPositivo == 0 || num < minPositivo)
+                {
+                    minPositivo = num;
+                }
+            }else if (maxNegativo == 0 || num > maxNegativo)
+            {
+                maxNegativo = num;
+            }
+
+            if (num%2 == 0)
+            {
+                contPares++;
+            }
+            
+            for (int i = 1; i <= num; i++)
+            {
+                if (num%i == 0)
+                {
+                    contador++;
+                }
+            }
+            
+            if (contador == 2)
+            {
+                primos++;
+            }
+            contador = 0;
+            
+            cout << "Ingrese un numero: " << endl;
+            cin >> num;
+        }
+
+        //A)
+        cout << "Maximo negativo: " << maxNegativo << ", minimo positivo: " << minPositivo << endl;
+
+        porc1 = (contPares * 100)/contTotales;
+        porc2 = 100 - porc1;
+
+        //B)
+        cout << "Porcentaje de pares: " << porc1 << "%, porcentaje de impares: " << porc2 << "%" << endl;
+
+        minPositivo = 0, maxNegativo = 0, contTotales = 0, contPares = 0;
+        
+        cout << "Ingrese un numero: " << endl;
+        cin >> num;
+    }
+
+    //C)
+    cout << "Cantidad de primos totales: " << primos << endl;
+    
     return 0;
 }

@@ -26,16 +26,16 @@ e) El porcentaje de ventas total discriminado por clientes Universitarios y No U
 
 int main()
 {
-    int numSuc, numSucAct, numVendedor, diaVenta, importe, contUni = 0, contNoUni = 0, importeMayor, sucMayor, diaMayor;
+    int numSuc, numSucAct, numVendedor, diaVenta, contFinal = 0, importe, contUni = 0, contNoUni = 0, importeMayor, sucMayor, diaMayor, numVendedorMayor, porcUni, porcNoUni;
     char tipoCliente;
     bool ventaMayor = true;
 
-    cout << "Ingrese sucursal de vente: " << endl;
+    cout << "Ingrese sucursal de la venta: " << endl;
     cin >> numSuc;
 
     while (numSuc != 0)
     {
-        int contTotal = 0, acuUni = 0, acuNoUni = 0, acuQuincena = 0, contQuincena = 0;
+        int contTotal = 0, acuUni = 0, acuNoUni = 0, promedio, acuQuincena = 0, contQuincena = 0;
         float comision1, comision2;
 
         numSucAct = numSuc;
@@ -54,6 +54,7 @@ int main()
             cin >> tipoCliente;
 
             contTotal++;
+            contFinal++;
 
             //Comisiones
             switch (tipoCliente)
@@ -80,11 +81,12 @@ int main()
             if (ventaMayor == true || importe > importeMayor )
             {
                 importeMayor = importe;
+                numVendedorMayor = numVendedor;
                 diaMayor = diaVenta;
                 sucMayor = numSucAct;
             }
             
-            cout << "Ingrese sucursal de vente: " << endl;
+            cout << "Ingrese sucursal de la venta: " << endl;
             cin >> numSuc;
 
         }
@@ -93,9 +95,26 @@ int main()
 
         //A)
         cout << "Comisión para ventas Universitarias: " << comision1 << ", comisión para ventas No Universitarias: " << comision2 << endl;
-        
+
+        //B)
+        cout << "Cantidad total vendida: " << contTotal << endl;
+
+        promedio = (acuQuincena / contQuincena);
+
+        //D)
+        cout << "Promedio de recaudacion para la segunda quincena venta 'No Universitarios': " << promedio << endl;
+
     }
     
+    //C)
+    cout << "Venta individual de mayor importe, numero de vendedor: "  << numVendedorMayor << ", sucursal: " << sucMayor << ", se realizo el dia: " << diaMayor << endl;
+
+    porcUni = (contUni * 100) / contFinal; 
+    porcNoUni = (contNoUni * 100) / contFinal;
+
+    //E)
+    cout << "Porcentaje de ventas clientes Universitarios: " << porcUni << endl;
+    cout << "Porcentaje de ventas clientes No Universitarios: " << porcNoUni << endl;
 
     return 0;
 }

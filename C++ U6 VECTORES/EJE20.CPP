@@ -15,7 +15,35 @@ int main()
 {
     setlocale(LC_ALL, "Spanish");
 
-    int numero;
+    int numVec1[5], numVec2[5], vecIntercalado[10], contImp = 0;
+
+    for (int i = 0; i < 5; i++)
+    {
+        cout << "Ingrese un número Vector 1: ";
+        cin >> numVec1[i];
+
+        cout << "Ingrese un número Vector 2: ";
+        cin >> numVec2[i];
+    }
+
+    for (int x = 0; x < 10; x++)
+    {
+        if (x%2 == 0)
+        {
+            vecIntercalado[x] = numVec1[x/2];
+        }else
+        {
+            vecIntercalado[x] = numVec2[contImp];
+            contImp++;
+        }
+    }
+
+    cout << "Vector intercalado:";
+
+    for (int z = 0; z < 10; z++)
+    {
+        cout << " | " << vecIntercalado[z];
+    }
     
     return 0;
 }

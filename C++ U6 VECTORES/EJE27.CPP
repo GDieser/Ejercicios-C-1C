@@ -69,7 +69,7 @@ void cargaDeTarifas(int importeKM[], int TAM_KM)
 
     int tarifa;
 
-    for (int i = 0; i < 5; i++)
+    for (int i = 0; i < TAM_KM; i++)
     {
         cout << "Número de Tarifa: #" << (i + 1) << endl;
 
